@@ -1,0 +1,72 @@
+.idoWarper {
+  padding: 1em;
+}
+
+.idoWarper h3 {
+  background-color: #ffffff;
+  z-index: 10;
+  position: relative;
+  margin-top: 1em;;
+}
+
+.idoWarper h3:after {
+  border-top: 3px dotted #666666;
+  height: 0px;
+  width: 100%;
+  display: block;
+  content: ' ';
+  position: relative;
+  top: 0em;
+  z-index: 1;
+}
+
+.imgWarper {
+  display: flex;
+}
+
+.imgWarper > div {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  flex: 1;
+}
+
+.imgWarper img {
+  max-height: 100%;
+}
+
+.logo {
+  width: 10em;
+  height: 10em;
+}
+
+
+.createAt {
+  margin-top: 2em;
+  text-align: right;
+  color: #666666;
+}
+
+
+.idoWarper section > div {
+  margin-bottom: 0.5em;
+}
+
+@media screen and (max-width: 500px) {
+  .idoWarper section > div {
+    margin-bottom: 0.7em;
+  }
+}
+
+
+.button {
+  line-height: 1em;
+  display: inline-block;
+  border-radius: 4px;
+  padding: 0.3em;
+  border: 1px solid #333;
+}
+
+.pdkSougou {
+  max-width: 450px;
+}
