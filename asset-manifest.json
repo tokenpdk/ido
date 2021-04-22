@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/ido/static/css/main.8fe90f25.chunk.css",
+    "main.css": "/ido/static/css/main.4ab13cce.chunk.css",
     "main.js": "/ido/static/js/main.ef4d891f.chunk.js",
     "main.js.map": "/ido/static/js/main.ef4d891f.chunk.js.map",
     "runtime-main.js": "/ido/static/js/runtime-main.dc249e4a.js",
@@ -10,7 +10,7 @@
     "static/js/3.c2a53b61.chunk.js": "/ido/static/js/3.c2a53b61.chunk.js",
     "static/js/3.c2a53b61.chunk.js.map": "/ido/static/js/3.c2a53b61.chunk.js.map",
     "index.html": "/ido/index.html",
-    "static/css/main.8fe90f25.chunk.css.map": "/ido/static/css/main.8fe90f25.chunk.css.map",
+    "static/css/main.4ab13cce.chunk.css.map": "/ido/static/css/main.4ab13cce.chunk.css.map",
     "static/js/2.bff541a1.chunk.js.LICENSE.txt": "/ido/static/js/2.bff541a1.chunk.js.LICENSE.txt",
     "static/media/king.ba2765b1.jpg": "/ido/static/media/king.ba2765b1.jpg",
     "static/media/pay.8e68b2df.gif": "/ido/static/media/pay.8e68b2df.gif",
@@ -21,7 +21,7 @@
   "entrypoints": [
     "static/js/runtime-main.dc249e4a.js",
     "static/js/2.bff541a1.chunk.js",
-    "static/css/main.8fe90f25.chunk.css",
+    "static/css/main.4ab13cce.chunk.css",
     "static/js/main.ef4d891f.chunk.js"
   ]
 }
