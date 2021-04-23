@@ -62,7 +62,6 @@ function App() {
   const [web3State, web3Dispatch] = useReducer(web3Reducer, initialWeb3State);
   const [dappState, dappDispatch] = useReducer(dappReducer, initialDappState);
 
-
   window.web3State = web3State;
   window.dappState = dappState;
 
@@ -168,10 +167,10 @@ function App() {
       );
 
       if (tx) {
-        alert('谢谢成功');
+        alert('成功了，谢谢');
       }
       else {
-        alert('转账失败了');
+        alert('失败了');
       }
     } catch (error) {
       alert(JSON.stringify(error));
@@ -211,7 +210,7 @@ function App() {
           <h3>募资金额</h3>
           <div>最低目标是筹备1HT。</div>
           <div>最高目标：无。</div>
-          <div>如果募资高于两倍HT，那么开发者将截留1HT最为最初的买域名费用。</div>
+          <div>如果募资高于两倍HT，那么开发者将截留1HT最为最初的买域名费用（假如后期买的话）。</div>
           <div>每次募资金额为0.011HT，不等于这个金额的，将当成无偿捐赠，由社区决定如何使用。</div>
           <div>每个账号没有限制打多少次，多次打将记录为一次。</div>
           <div>剩余HT将扣除手续费和50%的币加入LP池，</div>
@@ -227,6 +226,7 @@ function App() {
           <div>如果最后募集失败，将每人募集的0.01原路打回，0.001作为手续费。</div>
           <div>加入没任何人参与这个募资，那这个币还是不发行了。</div>
           <div>为啥募资失败就不发行？因为如果没有人知道，那这个发行了也没用。</div>
+          <div>如果你捐赠后又反悔了，请在添加LP之前邮箱联系。<br />开发者将扣除手续费之后原路打回。</div>
         </section>
 
         <section>
@@ -254,13 +254,13 @@ function App() {
             <img src={pay} alt="pay" />
           </div>
           <br />
+          <div>打款到: {CONSTANTS.myAddr}</div>
 
           {
           web3State.isEnabled &&
           web3State.network !== null &&
           web3State.account !== ethers.constants.AddressZero && (
             <div>
-              <div>打款到: {CONSTANTS.myAddr}</div>
               <div>你的余额: {web3State.balance}HT</div>
               <br />
               <div className={styles.button} onClick={donate}>打款 0.011 HT</div>
