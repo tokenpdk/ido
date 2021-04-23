@@ -18,7 +18,7 @@ export const sendTransaction = async (signer, provider, transaction) => {
     // if succeed returns a receipt of the transaction
     const receipt = await provider.waitForTransaction(tx.hash, 3, 120000)
     return receipt
-  } catch (e) {
+  } catch (error) {
     return null
   }
 }

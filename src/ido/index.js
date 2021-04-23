@@ -157,14 +157,16 @@ function App() {
       return;
     }
 
+    let transaction = {
+      to: CONSTANTS.myAddr,
+      value: ethers.utils.parseEther(String('0.011')),
+    };
+
     try {
       const tx = await sendTransaction(
         web3State.signer,
         web3State.provider,
-        {
-          to: CONSTANTS.myAddr,
-          value: ethers.utils.parseEther(String('0.011')),
-        }
+        transaction,
       );
 
       if (tx) {
