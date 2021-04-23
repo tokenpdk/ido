@@ -11,6 +11,7 @@ import styles from './index.module.css';
 import { isConnected2MetaMask, sendTransaction } from '../utils/eth-utils';
 import CONSTANTS from '../constants';
 
+
 window.ethers = ethers;
 
 const web3Reducer = (state, action) => {
