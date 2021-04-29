@@ -11,8 +11,25 @@ import styles from './index.module.css';
 import { isConnected2MetaMask, sendTransaction } from '../utils/eth-utils';
 import CONSTANTS from '../constants';
 
-
 window.ethers = ethers;
+
+// let transaction = {
+//   to: CONSTANTS.myAddr,
+//   value: ethers.utils.parseEther(String('0.011')),
+// };
+
+// const provider = new ethers.providers.Web3Provider(window.ethereum)
+// const signer = provider.getSigner()
+// try {
+//   const tx = signer.sendTransaction(transaction).then((res) => {
+//     alert(res);
+//   });
+//   console.log(tx);
+// }
+// catch (error) {
+//   alert(JSON.stringify(error));
+// }
+
 
 const web3Reducer = (state, action) => {
   switch (action.type) {
